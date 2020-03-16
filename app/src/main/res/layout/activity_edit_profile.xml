@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditProfileActivity"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/avatarLayout"
+        android:layout_marginTop="@dimen/account_item_marginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_item_height"
+        android:background="@drawable/account_item_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/edit_profile_item_text_marginStart"
+            android:text="@string/avatar"
+            android:textSize="@dimen/account_item_textSize"
+            android:textColor="@color/text_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/arrowImage"
+            android:layout_width="@dimen/account_arrow_size"
+            android:layout_height="@dimen/account_arrow_size"
+            android:layout_marginEnd="@dimen/account_arrow_size"
+            android:rotation="180"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/avatarImage"
+            android:layout_width="33.6dp"
+            android:layout_height="33.6dp"
+            android:layout_marginEnd="@dimen/edit_profile_item_arrow_marginStart"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/arrowImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nameLayout"
+        android:layout_marginTop="@dimen/account_item_marginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_item_height"
+        android:background="@drawable/account_item_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/edit_profile_item_text_marginStart"
+            android:text="@string/nick_name"
+            android:textSize="@dimen/account_item_textSize"
+            android:textColor="@color/text_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@id/arrowImage"
+            android:layout_width="@dimen/account_arrow_size"
+            android:layout_height="@dimen/account_arrow_size"
+            android:layout_marginEnd="@dimen/account_arrow_size"
+            android:rotation="180"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/edit_profile_item_arrow_marginStart"
+            android:gravity="end"
+            tools:text="真島吾郎"
+            android:textSize="14.56sp"
+            android:textColor="#9e9e9e"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/arrowImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/qrCodeLayout"
+        android:layout_marginTop="@dimen/account_item_marginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_item_height"
+        android:background="@drawable/account_item_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/edit_profile_item_text_marginStart"
+            android:text="@string/my_qr_code"
+            android:textSize="@dimen/account_item_textSize"
+            android:textColor="@color/text_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@id/arrowImage"
+            android:layout_width="@dimen/account_arrow_size"
+            android:layout_height="@dimen/account_arrow_size"
+            android:layout_marginEnd="@dimen/account_arrow_size"
+            android:rotation="180"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginEnd="@dimen/edit_profile_item_arrow_marginStart"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_qrcode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/arrowImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

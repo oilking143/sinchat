@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "770532589679",
+    "firebase_url": "https://sinchat.firebaseio.com",
+    "project_id": "sinchat",
+    "storage_bucket": "sinchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770532589679:android:f5dfcc23714ac0333c8d9a",
+        "android_client_info": {
+          "package_name": "com.sex8.sinchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770532589679-onrh6tb18obtl0bkvb5a1ponsbf0isdm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG9CcSvZfSKP1sMMB1hk4FBJnKjrLc5Eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770532589679-onrh6tb18obtl0bkvb5a1ponsbf0isdm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770532589679:android:c0205a97bf00a5253c8d9a",
+        "android_client_info": {
+          "package_name": "com.sex8.sinchat.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770532589679-02bjv112adt9cdi341rlv62hrrkonr6n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sex8.sinchat.debug",
+            "certificate_hash": "8336d4b01a69e2698bcadc3dc573430945b49332"
+          }
+        },
+        {
+          "client_id": "770532589679-onrh6tb18obtl0bkvb5a1ponsbf0isdm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG9CcSvZfSKP1sMMB1hk4FBJnKjrLc5Eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770532589679-onrh6tb18obtl0bkvb5a1ponsbf0isdm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

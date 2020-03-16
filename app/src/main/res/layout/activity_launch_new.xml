@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/launch_bg"
+    >
+
+    <ImageView
+        android:id="@+id/head_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/head_bg"
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        />
+
+    <Spinner
+        android:id="@+id/account_list"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/switcher"
+        app:layout_constraintEnd_toEndOf="@+id/viewpager"
+        app:layout_constraintStart_toStartOf="@+id/viewpager"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/switcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:alpha="0">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="0dp"
+            android:layout_weight="8.8"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/password_switcher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="8.8"
+                    android:text="密碼登錄"
+                    android:gravity="bottom"
+                    android:textColor="@color/pure_white"
+                    android:textSize="@dimen/btn_textSize"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/password_light"
+                    android:layout_width="8dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/btn_launch_selected_ripple"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18.4dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/confirm_switcher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="8.8"
+                    android:gravity="bottom"
+                    android:text="驗證碼登錄"
+                    android:textColor="@color/dark_text"
+                    android:textSize="@dimen/title_textSize" />
+
+                <ImageView
+                    android:id="@+id/confirm_light"
+                    android:layout_width="8dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/btn_launch_selected_ripple"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="480dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/switcher"
+        app:layout_constraintStart_toStartOf="@+id/switcher"
+        app:layout_constraintTop_toTopOf="@+id/switcher" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

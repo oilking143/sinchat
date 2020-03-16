@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <include layout="@layout/title"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_below="@id/title"
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_dodgeInsetEdges="bottom">
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_alignParentBottom="true"
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:id="@+id/addSendImage"
+                    android:layout_width="@dimen/title_ic_size"
+                    android:layout_height="@dimen/title_ic_size"
+                    android:layout_marginEnd="@dimen/chat_ic_marginHorizontal"
+                    android:layout_marginBottom="@dimen/chat_ic_marginVertical"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_add_send"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:id="@+id/emojiImage"
+                    android:layout_width="@dimen/title_ic_size"
+                    android:layout_height="@dimen/title_ic_size"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="@dimen/chat_ic_marginHorizontal"
+                    android:layout_toStartOf="@id/addSendImage"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_emoji"
+                    app:layout_constraintBottom_toBottomOf="@+id/addSendImage"
+                    app:layout_constraintEnd_toStartOf="@+id/addSendImage" />
+
+                <EditText
+                    android:id="@+id/inputEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="9.52dp"
+                    android:layout_marginEnd="@dimen/chat_ic_marginHorizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toStartOf="@id/emojiImage"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/input_chat_hint"
+                    android:minHeight="@dimen/chat_input_minHeight"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/text_gray_dark"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="@dimen/message_tab_textSize"
+                    android:maxLines="4"
+                    android:maxLength="80"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/emojiImage"
+                    app:layout_constraintStart_toStartOf="parent" />
+                
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/inputGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="addSendImage, emojiImage, inputEdit"
+                    android:visibility="gone"/>
+                
+                <TextView
+                    android:id="@+id/enterText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="@string/enter_chat"
+                    android:textSize="23sp"
+                    android:textColor="@color/main_color_dark_enabled"
+                    android:background="?selectableItemBackground"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="gone"/>
+
+                <View
+                    android:id="@+id/enterShadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/top_shadow_gradient"
+                    app:layout_constraintStart_toStartOf="@id/enterText"
+                    app:layout_constraintEnd_toEndOf="@id/enterText"
+                    app:layout_constraintBottom_toTopOf="@id/enterText"/>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/enterGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="enterText, enterShadow"
+                    android:visibility="visible"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/mySwipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/bottom"
+                android:background="#f1f1f1"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:transcriptMode="normal"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="true">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+ />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+            <ImageView
+                android:id="@+id/scroll_bottom"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/drop_down_icon"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="70dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                android:background="@drawable/round_dropdown_bg"
+                android:padding="7dp"
+                />
+
+        </RelativeLayout>
+
+        <com.sex8.sinchat.view.ChatBottomSheet
+            android:id="@+id/bottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chat_bottom_sheet_height"
+            android:background="@android:color/white"
+            app:layout_behavior="@string/bottom_sheet_behavior"
+            app:layout_insetEdge="bottom"
+            app:behavior_hideable="true"
+            app:behavior_peekHeight="0dp">
+
+        </com.sex8.sinchat.view.ChatBottomSheet>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.sex8.sinchat.view.ShowImageView
+        android:id="@+id/showImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="1dp"
+        android:translationZ="1dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

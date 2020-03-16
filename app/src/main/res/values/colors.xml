@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f84e82</color>
+    <color name="colorPrimaryDark">#f9f9f9</color>
+    <color name="colorAccent">#f84e82</color>
+    <color name="colorControlHighlight">#cccccc</color>
+    <color name="message_me_bg">#ffe1e1</color>
+    <color name="pure_white">#ffffff</color>
+    <color name="main_color_light">#fc86b8</color>
+    <color name="main_color_dark">#f84e82</color>
+    <color name="navigation_gray">#929292</color>
+    <color name="text_black">#5b5b5b</color>
+    <color name="text_while">#e6e6e6</color>
+    <color name="text_gray">#929292</color>
+    <color name="text_gray_dark">#696969</color>
+    <color name="text_gray_light">#737373</color>
+    <color name="text_hint_color">#b0b0b0</color>
+    <color name="black_alpha_60">#9b000000</color>
+    <color name="black_alpha_50">#7f000000</color>
+    <color name="while_alpha_20">#35ffffff</color>
+    <color name="dark_text">#80CDCDCD</color>
+
+    <color name="account_gray_text">#595959</color>
+    <color name="account_gray_light_text">#b8b8b8</color>
+    <color name="account_divider">#d9d9d9</color>
+
+    <color name="friend_news_btn_color">#54C4FF</color>
+
+    <color name="party_list_item_color_1">#f86492</color>
+    <color name="party_list_item_color_2">#3ca2ff</color>
+    <color name="party_list_item_color_3">#0ae38a</color>
+    <color name="party_list_item_color_4">#f8ab64</color>
+
+    <color name="dialog_input_hint">#dedede</color>
+    <color name="dialog_btn_negative">#e6e6e6</color>
+
+    <color name="comment_indicator_active">@color/main_color_dark</color>
+    <color name="comment_indicator_inactive">#ffe3ec</color>
+</resources>

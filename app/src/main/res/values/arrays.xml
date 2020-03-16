@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="comment_img">
+        <item>@drawable/img_comment_01</item>
+        <item>@drawable/img_comment_02</item>
+        <item>@drawable/img_comment_03</item>
+        <item>@drawable/img_comment_04</item>
+        <item>@drawable/img_comment_05</item>
+        <item>@drawable/img_comment_06</item>
+        <item>@drawable/img_comment_07</item>
+
+
+    </integer-array>
+    <string-array name="emoji">
+        <item>😂</item>
+        <item>😄</item>
+        <item>😃</item>
+        <item>😀</item>
+        <item>😊</item>
+        <item>😉</item>
+        <item>😍</item>
+        <item>😘</item>
+        <item>😚</item>
+        <item>😗</item>
+        <item>😙</item>
+        <item>😜</item>
+        <item>😝</item>
+        <item>😛</item>
+        <item>😳</item>
+        <item>😔</item>
+        <item>😌</item>
+        <item>😒</item>
+        <item>😞</item>
+        <item>😣</item>
+        <item>😢</item>
+        <item>😭</item>
+        <item>😪</item>
+        <item>😥</item>
+        <item>😰</item>
+        <item>😅</item>
+        <item>😓</item>
+        <item>😩</item>
+        <item>😫</item>
+        <item>😨</item>
+        <item>😱</item>
+        <item>😠</item>
+        <item>😡</item>
+        <item>😤</item>
+        <item>😖</item>
+        <item>😆</item>
+        <item>😋</item>
+        <item>😷</item>
+        <item>😎</item>
+        <item>😴</item>
+        <item>😵</item>
+        <item>😲</item>
+        <item>😟</item>
+        <item>😦</item>
+        <item>😧</item>
+        <item>😈</item>
+        <item>👿</item>
+        <item>😮</item>
+        <item>😬</item>
+        <item>😐</item>
+        <item>😕</item>
+        <item>😯</item>
+        <item>😶</item>
+        <item>😇</item>
+        <item>😏</item>
+        <item>😑</item>
+        <item>🙃</item>
+        <item>🙄</item>
+        <item>🤐</item>
+        <item>🤑</item>
+        <item>🤒</item>
+        <item>🤓</item>
+        <item>🤔</item>
+        <item>🤕</item>
+        <item>🙁</item>
+        <item>🙂</item>
+        <item>🤗</item>
+        <item>🤣</item>
+        <item>🤠</item>
+        <item>🤥</item>
+        <item>🤤</item>
+        <item>🤢</item>
+        <item>🤧</item>
+
+    </string-array>
+
+
+    <integer-array name="comment_type">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </integer-array>
+    <string-array name="test_account">
+
+        <item>154036008</item>
+        <item>154036058</item>
+        <item>154036108</item>
+        <item>154036158</item>
+        <item>154036208</item>
+
+        <item>154036258</item>
+        <item>154036308</item>
+        <item>154036358</item>
+        <item>154036408</item>
+        <item>154036458</item>
+
+        <item>154036508</item>
+        <item>154036558</item>
+        <item>154036608</item>
+        <item>154036658</item>
+        <item>154036708</item>
+
+        <item>154036758</item>
+        <item>154036858</item>
+        <item>154036908</item>
+        <item>154036958</item>
+        <item>154037008</item>
+
+        <item>154037058</item>
+        <item>154037108</item>
+        <item>154037158</item>
+        <item>154037208</item>
+        <item>154037258</item>
+
+    </string-array>
+
+    <string-array name="test_name">
+        <item>QK-狂總</item>
+        <item>Xander</item>
+        <item>Chap</item>
+        <item>Albus</item>
+        <item>Kale</item>
+
+        <item>LeoX</item>
+        <item>Web</item>
+        <item>Tommy</item>
+        <item>Wise</item>
+        <item>Wilson</item>
+
+        <item>Luna</item>
+        <item>Louise</item>
+        <item>Richard</item>
+        <item>Moli</item>
+        <item>油王</item>
+
+        <item>高手</item>
+        <item>Coson</item>
+        <item>Mark</item>
+        <item>Dean</item>
+        <item>Mori</item>
+
+        <item>Ed</item>
+        <item>聊天机器人</item>
+        <item>Charles</item>
+        <item>访客02</item>
+        <item>访客03</item>
+    </string-array>
+
+    <string-array name="test_imkey">
+        <item>gLxS/z8tjK6QphUrMo19xmVKPKKLdjtWwkmMzQo7XD3/eD7jzgZupxVTp7f5pKOHrRa+Vza/4azYnInicosTTkTCSs63MlB1CMltaHp97bSw5nN+89Sl9I+HzRh9EHIKDr1lS6e4CcVJ8IRR+SdHCfke4gGuesejwvW5oqL9aDQ=</item>
+        <item>e+5h/J/ucvHbANzlXFFFWghLu/0njsqS1ug46Ji5bvbg4hTdLqCh5hNaypzk0wKXMwt0ttBYHRQ8KaodQS1DBpjRiHtrtgJKXMmOZkplqaDh6vlTjvGigSqYfsov71/KQ4jxAPACDRauh3QNpHtdtw==</item>
+        <item>XyYtVAxbgQtpYBU7NaB4UnIXXLmJjg2mxROqa2oNZKFVOgDiHlVX+G+V5erd5EMnFpwADMEFNWs3+z5NeY5wueWhmRw/47ijJ/wLIUjDSgvOLKmZScVemg0Y+TscQqzavAd0QRuAjxROl0Zy5p0bvA==</item>
+        <item>DuM9ROxGP6ovxu2p5fff9rqcK7RbHmd2i4/3E6ALMT51k3J0dkK+7+ZD5/SaylZI0tqs+MYUaRmePmVi+SvSuRGfioX5/Kbw92NChdj+wakjUB/UGK32zGBtZZ1lRgSsYC37yGH5RXNTpOsYzNhchw==</item>
+        <item>e8FEbAzjuhLaaB+eKu++1I5XxsmXKSo1Q52mfhyL7mhzOjYWkK9sq9kNOqJDQWEGuuX2MO30s3FKV7SvGaFFmG8kDiT3C5ThmEwDwTT7ovEipU+8Ei8CtO59dKM3W1HYG+i5I0pdIh2zGEo+EYSlag==</item>
+
+        <item>sQCmHgS9PdH3Ab9h5+R9HQ8ySKexid7XhsBGu0hbeqXciRS2FG07m8EAlER81iV2sjZ1rn+DZK55RhuJeRhLCtyQD6kNv39J2y7Oev4NcrLoLO+ULQqYhf8Ma9ma76ZoFhwFnfmGgzXF5hfJXzXYnA==</item>
+        <item>DHDdVYpikdED1aRTjhfxaec1UQsjrNBnivzLAsaXwZ+O5vxwtTI6vAhKsEa6zzJHen/NLgTC7yMfXs2+TIjgVIzL8avpBa+G3Sq+TqcZEB4w4xOnFeJfZp6h78LWblNrCc9xxkkkpe2PW1KPodYZWA==</item>
+        <item>E+rqy2vbeJME6u1MYJ/xY/0oBvRFnJI29sydeiEPWJ9oLyC/NWYuciRk8xV+6q3ZgXIC+GVnZsWtyrHDKkIT7aGnadhChq6yaPncSLIsGg7cvz9pfhv3FcsX637kUGYiTwda6TooLjs5yxD0GvCOtA==</item>
+        <item>26XwJL76A9qFK0cmUMh7DU2p4YG9PzCn5lDJFcilP9xS/o6Qahqoixo8uDiTs4Ci1DfcudH81QR2gzGxGEl4XONtoYM0HCkCw6iVyJWU4N8cRp4whun/iQepGT8No2kbK0pIDgtDR+GhENaVcdVoNQ==</item>
+        <item>Qgv+kPMxWO0udIO06by68dPaMd7FQhv1ybbAFErb37mhMLWb1vpsNDi2rOBvc0wfKJOK/8cKrJRXEHkFQe0RNzuE77Gw2UfNAZnxLsDjs9PJMX5/yLuaYHKl/1tBaqg67WOdU78mIi0zgZovPJML6w==</item>
+
+        <item>J3TqE1k9+yCn1dHEWEan7mn34ZRI3HjiZlXNDUHNgshVHQgQbSTFNiOqdAwb9KyDnYZpFaA81kpT8ZJa5MWidLAOqB/sb64Da/BO41s0bZ1SIhGc7OVcaLZkWUK68ROzyw1kRsmHZmsw3Au48A62ZA==</item>
+        <item>n5fxojnKR3hx20wVZvNGSZHejsOHjyq9RRib48cbb9n0xKWflnik0A4WgTF5tYiHCgzPV5saCpKqoO7sSVXSh8e3cZgM+YB5TZACoxvMONyGHape4yIHxgykwOzoWXCoGpGMJIhymVLjzm/CYaiz+Q==</item>
+        <item>XihN0KstCWEJ/KKk4n9w5fomPoBiMRzR8SxdKxvK37cSjyLt7mKlXL8zHxqdejECJP6sliexDz4gOMzMtItoxKT6ZLlGl4cfRke6dTkjI6zsuhd8OOomZaKF5lmE2IiIEpsjnJWYM6Xbdoc5nQmDAQ==</item>
+        <item>CDF5CWtyn2KFg0RhouhbDDkcj1ZVYGvpp2GO5ILzNDJYWU0RIZSRPDlhT3hd7qKiwAaP8qt+keCP3HE1C8GTjV3x8yKfWRFcHpubRkoNCQoTZbhzji457ZKx5ufuzoY0+f39Ic+c2c+qWFtY8c4CAw==</item>
+        <item>QjXqEeH6HphnWKc7H16rkWHvJ1b3Y3VAYcRGH7ghsP8ZYe2Zjv32KT5yQ2nJnucNpIyKuZkgFoO0i/R/2xANX8z2Sh4BrY3F2Edct8eH6i22d0Zsv0sT3joQcAAOo7w3Rx/79owMiPOYoSSi28aCIdcG1qdFFw7fsfpVM2FMyFQ=</item>
+
+        <item>CPp9ZNhU2Am0T86T6RJBgu2xR7pjGKU5+VXJL9tuFCr7VEIyrnkcM1EQU6qy6JRbBlKC2ITPeZSAZ/7ys5JgIkn8WVqLfzrj2iVy+VlcO1c5zIMXsBSMJfSMYmgiif54nhg5AOpJLLPd3ktSI8qJtqJY1hdRMijG8rlIVnPAujo=</item>
+        <item>GrEL1PeDpadPp7xx7CPWOuz8IsemWbZb7EiBxVo0RipDXQO4t3NcUBQUyfGZ2tXwbFEr1SRJm9yVwXFYyzmGq6mpWotbRh/JDngSx18OKlfYVCruqnqnpt8AAR8JFvBpwd6XavXkZk8EAZZ7znhpCg==</item>
+        <item>cVfK6BLTNEUVFsZw6T1JDPZ71UxYbHfuPvaYjuu2ntWyPULWtC3Bcd+8X9MwkyM93CCjndlr72sLyafiJ5LK0C2qyx6rwvTvci8YCF36rKqpGszS0eRYFn4laW7Mme18goBVRFweIe4XPZJAOtXWLw==</item>
+        <item>nJ5dghqlxO3upGiP5SQ+V0nvVdSBGiw8EcF5YzCKrq015UoAi55So0/nNIgY/DFXgaHk+ClXeRfPZuHu1cKpqs82HnkpjcY+5RJpJJnTRKPJ/tzhs4P+W5XzLHa4/1Plz3k4rEphyQQ5HFn0ec0zYQ==</item>
+        <item>Wi8SQfD4Iyg6qgua7fH8IUx89j+nnl/DVaphrVmWi6ml36me1cwfRVvLHw566r42FWfmniM/R97NpHQn3BHfaZN4onPPXb/HPSqzLkXP/lI8HOhayCv4Xn7uzGNFRyLwTzQZuBQemEteh6a8Hvul7Q==</item>
+
+        <item>RnB+OUrLXwOCAiAaY00PeY2wCxrRsi2j9NSmQJJ/BT7sLZB//MfUp039rhJ9e9Ovt8XbzoFYj/9UsUAlFpnhHInkAf30P26ZyBgUW+lYoVjsXHjjU7icu2x5a5w41RHqskpNQl8yn9NcxF9WcWNW0Q==</item>
+        <item>1XHtrWNrWiK+K/b8CC/scqymE9u9IU+FAEcDzeusoGeIvRjrv9j1y4naCBMbXuO9BtjYY2anR5A7U5ihS9Oeck9EWp18xmrIvaJxyvisL84v8/5k+DBPWqAeDUKoG2lsOfXAfvztNLzARa+7IDZA4mqxxzLDojFklBcaE+/yvRGYICei5FYF09k5mt+7tHSG</item>
+        <item>x2Zdb10LGZU43urm9xOx68HZ54Mqvih9Qtj0uWucOiTJJLm3qtS0BI5LLAY8Zt5FIEvxsalSiDupetvmQ0pJiM2jRcxc0mSMSdu2Dp5eC6Bo2g9M2BW3VDE3Cn/9GS/u17OY/hRIveWnVKIDUT1hCQ==</item>
+        <item>NojiUt5OgUuOwdmpqbjN2jjz6zzmFBFXEBenrfuxAPGQfw6lspVSHJuGk1guyA5Bf2Zxp9y54DV/BE4vhK/YU3arRQFwLhYrP3H9+vSLtSykZN1h1yFFBltlbycQTt3+TFt5F842oQKWIwssC3wKl7Fgt8jbls3zpxgYwKo51Og=</item>
+        <item>uWjyTpeoeOV3U6ZnMz+ohBFItR6XKAICqJY0nLZWDdDjYjLIMFTg1U1IQ+qSHkCvvEJyRIx8Fnv/CjR/D6Ch4ZeAte1x9tqJ0+Xkr19+A79vxwpG3ooQUQQ1lK1x7lM0JN5k2i4iOJy02dyPUxza+CxAl6pj9oK8pIfpbgm3dbw=</item>
+
+    </string-array>
+
+</resources>

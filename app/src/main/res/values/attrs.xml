@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClipImageLayout">
+        <attr name="borderColor" format="color" />s
+        <attr name="borderWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="MaxHeightScrollView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+</resources>

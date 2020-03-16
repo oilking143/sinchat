@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:paddingStart="@dimen/item_message_paddingHorizontal"
+    android:paddingTop="10dp"
+    android:paddingEnd="@dimen/item_message_paddingHorizontal"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/iconImage"
+        android:layout_width="@dimen/item_message_ic_size"
+        android:layout_height="@dimen/item_message_ic_size"
+        android:background="@android:color/white"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_gray_light"
+        android:textSize="@dimen/item_message_name_textSize"
+        app:layout_constraintEnd_toEndOf="@+id/contentRL"
+        app:layout_constraintTop_toTopOf="@id/iconImage"
+        tools:text="Sin助手" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_message_text_marginHorizontal"
+        android:textColor="@color/text_gray_light"
+        android:textSize="@dimen/item_message_name_textSize"
+        app:layout_constraintStart_toEndOf="@+id/iconImage"
+        app:layout_constraintTop_toTopOf="@id/iconImage"
+        tools:text="Sin助手" />
+
+    <RelativeLayout
+        android:id="@+id/contentRL"
+        android:layout_marginStart="@dimen/item_message_text_marginHorizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/iconImage"
+        app:layout_constraintTop_toBottomOf="@id/timeText">
+
+        <TextView
+            android:id="@+id/contentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_other_bg"
+            android:gravity="center_vertical"
+            android:maxWidth="@dimen/item_message_text_maxWidth"
+            android:minWidth="96dp"
+            android:padding="@dimen/item_message_text_padding"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/item_message_textSize"
+            tools:text="測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/item_message_image_maxSize"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/item_message_image_maxSize"
+            android:maxHeight="@dimen/item_message_image_maxSize"
+            android:minWidth="@dimen/item_message_image_minSize"
+            android:minHeight="@dimen/item_message_image_minSize"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.Placeholder
+        android:id="@+id/commentPlaceholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="@id/contentRL"
+        app:layout_constraintEnd_toEndOf="@id/contentRL"
+        app:layout_constraintBottom_toBottomOf="@id/contentRL"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/commentPlaceholder"
+        app:layout_constraintStart_toStartOf="@id/contentRL"
+        app:layout_constraintEnd_toEndOf="@id/contentRL">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/reportImage"
+        android:layout_width="@dimen/item_message_send_error_size"
+        android:layout_height="@dimen/item_message_send_error_size"
+        android:layout_marginStart="@dimen/item_message_send_margin"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_report_view"
+        app:layout_constraintStart_toEndOf="@id/contentRL"
+        app:layout_constraintBottom_toBottomOf="@id/contentRL"/>
+
+    <TextView
+        android:id="@+id/reportText"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textColor="#ff4a4a"
+        android:textSize="10sp"
+        android:text="1"
+        app:layout_constraintStart_toEndOf="@id/reportImage"
+        app:layout_constraintTop_toTopOf="@id/reportImage"
+        app:layout_constraintBottom_toBottomOf="@id/reportImage"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/reportGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="reportImage,reportText"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

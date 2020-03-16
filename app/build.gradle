@@ -1,0 +1,103 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.sex8.sinchat"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.3.12.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        buildConfigField 'String', 'BASE_URL', '"http://api.coson.im.dev.iel.local/v4/"'
+     //   buildConfigField 'String', 'BASE_URL', '"http://api.stage4.im.dev.iel.local/v4/"'
+         buildConfigField 'String', 'BASE_URL', '"http://api.8ijgd5.space/v4/"'
+
+        //  buildConfigField 'String', 'BASE_URL', '"http://api.coson.im.dev.iel.local/v3_1/"'
+        buildConfigField 'String', 'StevenApi_URL', '"http://10.99.103.118:82"'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "Boolean", "DEBUG_MODE", "false"
+        }
+        debug {
+            applicationIdSuffix ".debug"
+            debuggable true
+            buildConfigField "Boolean", "DEBUG_MODE", "true"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    //room
+    def room_version = "2.2.4"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+//    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0-alpha02'
+
+//    implementation 'com.android.support:design:28.0.0'
+//    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+//    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+//    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.3.0"
+    implementation "io.reactivex.rxjava2:rxjava:2.1.7"
+    implementation "io.reactivex.rxjava2:rxandroid:2.0.1"
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+    implementation 'tech.gusavila92:java-android-websocket-client:1.2.1'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'id.zelory:compressor:2.1.0'
+    implementation 'com.google.zxing:core:3.2.1'
+    implementation 'top.zibin:Luban:1.1.8'
+    implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+    //聯絡人英文快速排序列表
+    implementation 'com.github.myinnos:AlphabetIndex-Fast-Scroll-RecyclerView:1.0.92'
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
+    //側滑刪除
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+    //google FireBase
+    implementation 'com.google.firebase:firebase-analytics:16.0.9'
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+//    implementation "com.android.support:support-emoji:28.0.0"
+//    implementation "com.android.support:support-emoji-bundled:28.0.0"
+    implementation "com.squareup.picasso:picasso:2.5.2"
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    implementation group: 'com.cloudinary', name: 'cloudinary-android', version: '1.22.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.emoji:emoji:1.0.0'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.1'
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+    def lifecycle_version = "2.2.0"
+    //viewmodel for Fragment
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+    implementation 'top.zibin:Luban:1.1.8'
+    implementation 'com.github.nanchen2251:CompressHelper:1.0.5'
+
+}

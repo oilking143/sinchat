@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/view_name_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="sinchat_我的_好友/關注/粉絲/群列表"
+        android:textSize="25dp"
+        android:textColor="@color/text_gray"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <EditText
+        android:id="@+id/account_id2"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="19dp"
+        android:hint="@string/hint_enter_account"
+        android:textColorHint="@color/text_hint_color"
+        android:theme="@style/MyEditText"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        app:layout_constraintTop_toBottomOf="@+id/account_id2">
+
+        <EditText
+            android:id="@+id/account_password"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:hint="@string/bind_bind_confirmcode_hint"
+            android:inputType="textPassword"
+            android:textColorHint="@color/text_hint_color"
+            android:theme="@style/MyEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/visible"
+            android:layout_width="85dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="10dp"
+            android:text="發送驗證碼"
+            android:gravity="center"
+            android:textColor="@color/pure_white"
+            android:background="@drawable/confirm_code_ripple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/account_password"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/forgetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘記密碼"
+        android:textColor="#F6D44F"
+        app:layout_constraintEnd_toEndOf="@+id/account_id2"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/btnGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgetText">
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginBottom="16.8dp"
+            android:background="@drawable/btn_negative_ripple"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_textSize" />
+
+        <TextView
+            android:id="@+id/registerText"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:background="@drawable/btn_launch_negative_ripple"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_textSize" />
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

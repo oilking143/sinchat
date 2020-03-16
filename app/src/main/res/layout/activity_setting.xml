@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SettingActivity"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/editPasswordLayout"
+        android:layout_marginTop="@dimen/account_item_marginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_item_height"
+        android:background="@drawable/account_item_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/edit_profile_item_text_marginStart"
+            android:text="@string/edit_password"
+            android:textSize="@dimen/account_item_textSize"
+            android:textColor="@color/text_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/arrowImage"
+            android:layout_width="@dimen/account_arrow_size"
+            android:layout_height="@dimen/account_arrow_size"
+            android:layout_marginEnd="@dimen/account_arrow_size"
+            android:rotation="180"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/verificationMailLayout"
+        android:layout_marginTop="@dimen/account_item_marginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_item_height"
+        android:background="@drawable/account_item_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/edit_profile_item_text_marginStart"
+            android:text="@string/verification_mail"
+            android:textSize="@dimen/account_item_textSize"
+            android:textColor="@color/text_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@id/arrowImage"
+            android:layout_width="@dimen/account_arrow_size"
+            android:layout_height="@dimen/account_arrow_size"
+            android:layout_marginEnd="@dimen/account_arrow_size"
+            android:rotation="180"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bindMobileNumberLayout"
+        android:layout_marginTop="@dimen/account_item_marginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_item_height"
+        android:background="@drawable/account_item_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/edit_profile_item_text_marginStart"
+            android:text="@string/bind_cellphone"
+            android:textSize="@dimen/account_item_textSize"
+            android:textColor="@color/text_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@id/arrowImage"
+            android:layout_width="@dimen/account_arrow_size"
+            android:layout_height="@dimen/account_arrow_size"
+            android:layout_marginEnd="@dimen/account_arrow_size"
+            android:rotation="180"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

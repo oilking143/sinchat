@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <include layout="@layout/title"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/friendsLayout"
+        android:layout_marginTop="18.48dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_item_height"
+        android:background="@drawable/account_item_bg">
+
+        <ImageView
+            android:id="@+id/itemIconImage"
+            android:layout_width="@dimen/account_item_icon_size"
+            android:layout_height="@dimen/account_item_icon_size"
+            android:layout_marginStart="@dimen/account_item_icon_marginStart"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_pay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/account_item_text_marginStart"
+            android:text="@string/friends_circle"
+            android:textSize="@dimen/account_item_textSize"
+            android:textColor="@color/text_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/itemIconImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="@dimen/account_arrow_size"
+            android:layout_height="@dimen/account_arrow_size"
+            android:layout_marginEnd="@dimen/account_arrow_size"
+            android:rotation="180"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/voiceControlLayout"
+        android:layout_marginTop="18.48dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_item_height"
+        android:background="@drawable/account_item_bg">
+
+        <ImageView
+            android:id="@id/itemIconImage"
+            android:layout_width="@dimen/account_item_icon_size"
+            android:layout_height="@dimen/account_item_icon_size"
+            android:layout_marginStart="@dimen/account_item_icon_marginStart"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_pay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/account_item_text_marginStart"
+            android:text="@string/voice_control"
+            android:textSize="@dimen/account_item_textSize"
+            android:textColor="@color/text_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/itemIconImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="@dimen/account_arrow_size"
+            android:layout_height="@dimen/account_arrow_size"
+            android:layout_marginEnd="@dimen/account_arrow_size"
+            android:rotation="180"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

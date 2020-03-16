@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dialog_padding"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg"
+    android:layout_gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/dialog_location_title"
+        android:textColor="@color/main_color_dark"
+        android:textSize="@dimen/dialog_title_textSize"/>
+
+    <com.sex8.sinchat.view.MaxHeightScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:maxHeight="320dp">
+
+        <RadioGroup
+            android:id="@+id/locationRadioGroup"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+        </RadioGroup>
+
+    </com.sex8.sinchat.view.MaxHeightScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="@dimen/dialog_btn_layout_marginTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="159dp" />
+
+        <TextView
+            android:id="@+id/negativeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/dialog_btn"
+            android:text="@string/cancel"
+            android:background="@drawable/dialog_btn_negative_ripple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideLine"/>
+
+        <TextView
+            android:id="@+id/positiveText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/dialog_btn"
+            android:text="@string/ok"
+            android:background="@drawable/dialog_btn_positive_ripple"
+            app:layout_constraintStart_toStartOf="@id/guideLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

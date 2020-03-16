@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:mode="same_level"
+    app:dragEdge="right">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/deleteLayout"
+        android:layout_width="@dimen/message_tab_icon_width"
+        android:layout_height="@dimen/message_tab_icon_width"
+        android:background="@drawable/main_color_ripple">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_del"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/message_tab_item_paddingHorizontal"
+        android:paddingEnd="@dimen/message_tab_item_paddingHorizontal"
+        android:paddingTop="@dimen/message_tab_item_paddingVertical"
+        android:paddingBottom="@dimen/message_tab_item_paddingVertical"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/iconImage"
+            android:layout_width="@dimen/message_tab_icon_width"
+            android:layout_height="@dimen/message_tab_icon_width"
+            tools:background="@drawable/unread_round"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/sendText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="傳訊息"
+            android:textSize="14.56sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_positive_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16.8dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/message_tab_textSize"
+            android:textColor="@color/message_tab_text"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@id/sendText"
+            app:layout_constraintStart_toEndOf="@id/iconImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Sin助手" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:mode="same_level"
+    app:dragEdge="right">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/deleteLayout"
+        android:layout_width="@dimen/message_tab_icon_width"
+        android:layout_height="@dimen/message_tab_icon_width"
+        android:background="@drawable/main_color_ripple">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_del"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/message_tab_item_paddingHorizontal"
+        android:paddingEnd="@dimen/message_tab_item_paddingHorizontal"
+        android:paddingTop="@dimen/message_tab_item_paddingVertical"
+        android:paddingBottom="@dimen/message_tab_item_paddingVertical"
+        android:background="?android:attr/selectableItemBackground">
+
+
+        <ImageView
+            android:id="@+id/iconImage"
+            android:layout_width="@dimen/friend_circle_item_icon_size"
+            android:layout_height="@dimen/friend_circle_item_icon_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/unread_round" />
+
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="22.2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_gray_dark"
+            android:textSize="16.8sp"
+            app:layout_constraintStart_toEndOf="@+id/iconImage"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp"
+            tools:text="dadsadsad" />
+
+
+        <TextView
+            android:id="@+id/sexText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/round_sex_bg_male"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="♂35"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12.4sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iconImage"
+            app:layout_constraintStart_toStartOf="@+id/nameText" />
+
+        <TextView
+            android:id="@+id/LvText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/sexText"
+            android:background="@drawable/round_sex_bg_lv"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="LV20"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12.4sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iconImage"
+            app:layout_constraintStart_toEndOf="@+id/sexText" />
+
+        <TextView
+            android:id="@+id/feature_btn"
+            android:layout_width="65dp"
+            android:layout_height="23dp"
+            android:background="@drawable/round_bg_primecolor"
+            android:text="傳訊息"
+            android:textColor="@color/pure_white"
+            android:textSize="12.4sp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+

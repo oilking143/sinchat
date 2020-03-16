@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sex8.sinchat.view.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_height="100dp"
+    tools:layout_width="100dp">
+
+    <ImageView
+        android:id="@+id/photoImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:src="@android:drawable/ic_menu_gallery" />
+
+    <View
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_alpha_60"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/numText"
+        android:layout_marginTop="@dimen/select_photo_num_marginTop"
+        android:layout_marginStart="@dimen/select_photo_num_marginTop"
+        android:layout_width="@dimen/select_photo_item_num_width"
+        android:layout_height="@dimen/select_photo_item_num_width"
+        android:background="@drawable/round_photo_num_bg"
+        android:gravity="center"
+        tools:text="9"
+        android:textSize="@dimen/select_photo_item_num_textSize"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/cameraView"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:padding="25dp"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/ic_menu_camera"
+        android:background="@android:color/darker_gray"
+        android:visibility="gone"/>
+
+
+</com.sex8.sinchat.view.SquareRelativeLayout>

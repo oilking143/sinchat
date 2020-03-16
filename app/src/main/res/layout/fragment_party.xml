@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:tabTextAppearance="@style/TextAppearance.Design.Tab.Custom"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:tabBackground="@color/colorPrimaryDark"
+                app:tabGravity="center"
+                app:tabIndicator="@drawable/btn_positive_bg"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="3.92dp"
+                app:tabSelectedTextColor="@color/text_black"
+                app:tabTextColor="@color/text_while"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            
+            <ImageView
+                android:id="@+id/locationImage"
+                android:layout_marginEnd="15dp"
+                android:layout_width="19dp"
+                android:layout_height="28dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_location"
+                android:background="?selectableItemBackgroundBorderless"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_marginEnd="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_hint_color"
+                android:textSize="13.44sp"
+                tools:text="香港特別行政區"
+                android:background="?selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toStartOf="@id/locationImage"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/locationGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="locationImage,locationText"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

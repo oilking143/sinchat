@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:tabBackground="@color/colorPrimaryDark"
+                app:tabGravity="center"
+                app:tabIndicator="@drawable/btn_positive_bg"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="3.92dp"
+                app:tabSelectedTextColor="@color/text_black"
+                app:tabTextAppearance="@style/TextAppearance.Design.Tab.Custom"
+                app:tabTextColor="@color/text_while" />
+
+            <TextView
+                android:id="@+id/doneText"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:background="@drawable/ic_done"
+                android:gravity="center"
+                android:text="@string/done"
+                android:textColor="@color/main_color_dark"
+                android:textSize="14dp"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
